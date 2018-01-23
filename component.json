@@ -10,11 +10,11 @@
         "viewClass": "TextFieldWithNoteView",
         "note": "Please use <b>Wice</b> mandant."
       },
-      "email": {
-        "label": "Your email",
+      "username": {
+        "label": "Your username",
         "required": true,
         "viewClass": "TextFieldView",
-        "note": "Use your email registerd in Wice"
+        "note": "Use your username registerd in Wice"
       },
       "password": {
         "label": "Your password",
