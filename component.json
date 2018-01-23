@@ -1,14 +1,26 @@
 {
-  "title": "Petstore API (Node.js)",
-  "description": "elastic.io component for the Petstore API",
-  "docsUrl": "https://github.com/elasticio/petstore-component-nodejs",
+  "title": "Wice",
+  "description": "Wice component for the elastic.io platform",
+  "docsUrl": "https://wice.de/",
   "credentials": {
     "fields": {
-      "apiKey": {
-        "label": "API key",
+      "mandant": {
+        "label": "Mandant",
         "required": true,
         "viewClass": "TextFieldWithNoteView",
-        "note": "Please use <b>elasticio</b> as API key. For more details see <a href='https://petstore.elastic.io/docs/' target='_blank'>Petstore API docs</a>."
+        "note": "Please use <b>Wice</b> mandant."
+      },
+      "email": {
+        "label": "Your email",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "note": "Use your email registerd in Wice"
+      },
+      "password": {
+        "label": "Your password",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "note": "Use your password for Wice"
       }
     }
   },
