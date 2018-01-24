@@ -5,14 +5,15 @@ module.exports = function verifyCredentials(credentials, cb) {
 
   if (!credentials.email) {
     console.log('Invalid email');
-    return cb(null,
-      verified: false
-    });
-}
+    return cb(null, {verified: false});
+  }
+
+  if (!credentials.mandant) {
+    console.log('Invalid mandant');
+    return cb(null, {verified: false});
+  }
 
   console.log('Credentials verified successfully');
 
-  cb(null, {
-    verified: true
-  });
+  cb(null, {verified: true});
 }
