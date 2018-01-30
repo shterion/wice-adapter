@@ -4,6 +4,12 @@
   "docsUrl": "https://wice.de/",
   "credentials": {
     "fields": {
+      "apikey": {
+        "label": "API key for data sharing",
+        "required": true,
+        "viewClass": "TextFieldWithNoteView",
+        "note": "Please use <b>WICE</b> API key."
+      },
       "mandant": {
         "label": "Mandant",
         "required": true,
