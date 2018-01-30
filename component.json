@@ -39,6 +39,14 @@
       "metadata": {
         "out": "./lib/schemas/getPersons.out.json"
       }
+    }, "getOrganizationsPolling": {
+      "main": "./lib/triggers/getOrganizationsPolling.js",
+      "type": "polling",
+      "description": "Fetch all organizations from wice saved by the user",
+      "title": "Get Organizations",
+      "metadata": {
+        "out": "./lib/schemas/getOrganizations.out.json"
+      }
     }
   },
   "actions": {
