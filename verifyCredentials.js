@@ -3,8 +3,8 @@
 module.exports = function verifyCredentials(credentials, cb) {
   console.log('Credentials passed for verification %j', credentials)
 
-  if (!credentials.email) {
-    console.log('Invalid email');
+  if (!credentials.apikey) {
+    console.log('Invalid apikey');
     return cb(null, {verified: false});
   }
 
