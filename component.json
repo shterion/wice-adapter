@@ -55,7 +55,7 @@
       "description": "Fetch all articles from wice saved by the user",
       "title": "Get Articles",
       "metadata": {
-        "out": "./lib/schemas/getArticlesPolling.out.json"
+        "out": "./lib/schemas/getArticles.out.json"
       }
     }
   },
