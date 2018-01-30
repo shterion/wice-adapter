@@ -1,15 +1,15 @@
 {
-    "name": "@elasticio/petstore-component-nodejs",
-    "version": "0.0.1",
-    "description": "elastic.io component for the Petstore API",
+    "name": "wice_component",
+    "version": "0.1.0",
+    "description": "elasticio-wice-component",
     "scripts": {
         "test": "exit 0"
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:elasticio/petstore-component-nodejs.git"
+        "url": "git@github.com:openintegrationhub/Data-and-Domain-Models.git"
     },
-    "author": "elastic.io GmbH",
+    "author": "WICE GmbH",
     "license": "BSD-2-Clause",
     "engines": {
         "node": "8.6.0",
