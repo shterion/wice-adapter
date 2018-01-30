@@ -39,13 +39,23 @@
       "metadata": {
         "out": "./lib/schemas/getPersons.out.json"
       }
-    }, "getOrganizationsPolling": {
+    },
+    "getOrganizationsPolling": {
       "main": "./lib/triggers/getOrganizationsPolling.js",
       "type": "polling",
       "description": "Fetch all organizations from wice saved by the user",
       "title": "Get Organizations",
       "metadata": {
         "out": "./lib/schemas/getOrganizations.out.json"
+      }
+    },
+    "getArticlesPolling": {
+      "main": "./lib/triggers/getArticlesPolling.js",
+      "type": "polling",
+      "description": "Fetch all articles from wice saved by the user",
+      "title": "Get Articles",
+      "metadata": {
+        "out": "./lib/schemas/getArticlesPolling.out.json"
       }
     }
   },
