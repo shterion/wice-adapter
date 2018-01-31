@@ -68,6 +68,15 @@
         "in": "./lib/schemas/createPerson.in.json",
         "out": "./lib/schemas/createPerson.out.json"
       }
+    },
+    "createOrganization": {
+      "main": "./lib/actions/createOrganization.js",
+      "title": "Create Organization",
+      "description": "Create an organization in wice",
+      "metadata": {
+        "in": "./lib/schemas/createOrganization.in.json",
+        "out": "./lib/schemas/createOrganization.out.json"
+      }
     }
   }
 }
