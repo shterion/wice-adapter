@@ -60,5 +60,14 @@
     }
   },
   "actions": {
+    "createPerson": {
+      "main": "./lib/actions/createPerson.js",
+      "title": "Create Person",
+      "description": "Create a new person in snazzycontacts",
+      "metadata": {
+        "in": "./lib/schemas/createPerson.in.json",
+        "out": "./lib/schemas/createPerson.out.json"
+      }
+    }
   }
 }
