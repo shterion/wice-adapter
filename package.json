@@ -1,7 +1,7 @@
 {
     "name": "wice_component",
     "version": "0.1.0",
-    "description": "elasticio-wice-component",
+    "description": "elastic.io Wice component",
     "scripts": {
         "test": "exit 0"
     },
@@ -9,7 +9,7 @@
         "type": "git",
         "url": "git@github.com:openintegrationhub/Data-and-Domain-Models.git"
     },
-    "author": "WICE GmbH",
+    "author": "Wice GmbH",
     "license": "BSD-2-Clause",
     "engines": {
         "node": "8.6.0",

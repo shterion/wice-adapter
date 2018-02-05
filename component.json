@@ -77,6 +77,15 @@
         "in": "./lib/schemas/createOrganization.in.json",
         "out": "./lib/schemas/createOrganization.out.json"
       }
+    },
+    "createArticle": {
+      "main": "./lib/actions/createArticle.js",
+      "title": "Create Articla",
+      "description": "Create a new article in wice",
+      "metadata": {
+        "in": "./lib/schemas/createArticle.in.json",
+        "out": "./lib/schemas/createArticle.out.json"
+      }
     }
   }
 }
