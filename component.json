@@ -80,7 +80,7 @@
     },
     "createArticle": {
       "main": "./lib/actions/createArticle.js",
-      "title": "Create Articla",
+      "title": "Create Article",
       "description": "Create a new article in wice",
       "metadata": {
         "in": "./lib/schemas/createArticle.in.json",
