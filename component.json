@@ -96,6 +96,15 @@
         "in": "./lib/schemas/createArticle.in.json",
         "out": "./lib/schemas/createArticle.out.json"
       }
+    },
+    "deletePerson": {
+      "main": "./lib/actions/deletePerson.js",
+      "title": "Delete Person",
+      "description": "Delete a person in wice",
+      "metadata": {
+        "in": "./lib/schemas/deletePerson.in.json",
+        "out": "./lib/schemas/deletePerson.out.json"
+      }
     }
   }
 }
