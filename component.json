@@ -97,6 +97,15 @@
         "out": "./lib/schemas/createArticle.out.json"
       }
     },
+    "updatePerson": {
+      "main": "./lib/actions/updatePerson.js",
+      "title": "Update Person",
+      "description": "Update a person in wice",
+      "metadata": {
+        "in": "./lib/schemas/updatePerson.in.json",
+        "out": "./lib/schemas/updatePerson.out.json"
+      }
+    },
     "deletePerson": {
       "main": "./lib/actions/deletePerson.js",
       "title": "Delete Person",
