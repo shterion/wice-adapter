@@ -114,6 +114,15 @@
         "in": "./lib/schemas/deleteOrganization.in.json",
         "out": "./lib/schemas/deleteOrganization.out.json"
       }
+    },
+    "deleteArticle": {
+      "main": "./lib/actions/deleteArticle.js",
+      "title": "Delete Article",
+      "description": "Delete an article in wice",
+      "metadata": {
+        "in": "./lib/schemas/deleteArticle.in.json",
+        "out": "./lib/schemas/deleteArticle.out.json"
+      }
     }
   }
 }
