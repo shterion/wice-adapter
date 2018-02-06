@@ -70,6 +70,15 @@
         "out": "./lib/schemas/getPerson.out.json"
       }
     },
+    "getOrganizationPolling": {
+      "main": "./lib/triggers/getOrganizationPolling.js",
+      "type": "polling",
+      "description": "Fetch a single Organization",
+      "title": "Get a Organization",
+      "metadata": {
+        "out": "./lib/schemas/getOrganization.out.json"
+      }
+    },
     "createPerson": {
       "main": "./lib/actions/createPerson.js",
       "title": "Create Person",
