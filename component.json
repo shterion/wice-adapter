@@ -71,7 +71,7 @@
       }
     },
     "getOrganizationPolling": {
-      "main": "./lib/triggers/getOrganizationPolling.js",
+      "main": "./lib/actions/getOrganizationPolling.js",
       "type": "polling",
       "description": "Fetch a single Organization",
       "title": "Get a Organization",
