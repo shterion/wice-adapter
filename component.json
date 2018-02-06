@@ -76,6 +76,7 @@
       "description": "Fetch a single Organization",
       "title": "Get a Organization",
       "metadata": {
+        "in": "./lib/schemas/getOrganization.in.json",
         "out": "./lib/schemas/getOrganization.out.json"
       }
     },
