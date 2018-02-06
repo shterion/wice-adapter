@@ -61,7 +61,7 @@
   },
   "actions": {
     "getPersonPolling": {
-      "main": "./lib/triggers/getPersonPolling.js",
+      "main": "./lib/actions/getPersonPolling.js",
       "type": "polling",
       "description": "Get a single user",
       "title": "Get a Person",
