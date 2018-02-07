@@ -86,8 +86,8 @@
       "description": "Get a single article",
       "title": "Get Article",
       "metadata": {
-        "in": "./lib/schemas/getArticlePolling.in.json",
-        "out": "./lib/schemas/getArticlePolling.out.json"
+        "in": "./lib/schemas/getArticle.in.json",
+        "out": "./lib/schemas/getArticle.out.json"
       }
     },
     "createPerson": {
