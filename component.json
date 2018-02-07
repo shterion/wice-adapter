@@ -80,6 +80,16 @@
         "out": "./lib/schemas/getOrganization.out.json"
       }
     },
+    "getArticlePolling": {
+      "main": "./lib/actions/getArticlePolling.js",
+      "type": "polling",
+      "description": "Get a single article",
+      "title": "Get Article",
+      "metadata": {
+        "in": "./lib/schemas/getArticlePolling.in.json",
+        "out": "./lib/schemas/getArticlePolling.out.json"
+      }
+    },
     "createPerson": {
       "main": "./lib/actions/createPerson.js",
       "title": "Create Person",
