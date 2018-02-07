@@ -57,9 +57,11 @@
       "metadata": {
         "out": "./lib/schemas/getArticles.out.json"
       }
-    },
+    }
+  },
+  "actions": {
     "getPersonPolling": {
-      "main": "./lib/triggers/getPersonPolling.js",
+      "main": "./lib/actions/getPersonPolling.js",
       "type": "polling",
       "description": "Get a single user",
       "title": "Get a Person",
@@ -67,10 +69,7 @@
         "in": "./lib/schemas/getPerson.in.json",
         "out": "./lib/schemas/getPerson.out.json"
       }
-    }
-  },
-  "actions": {
-
+    },
     "getOrganizationPolling": {
       "main": "./lib/actions/getOrganizationPolling.js",
       "type": "polling",
