@@ -1,13 +1,13 @@
 {
-    "name": "wice_component",
-    "version": "0.1.0",
+    "name": "@elasticio/wice-component-nodejs",
+    "version": "0.0.1",
     "description": "elastic.io Wice component",
     "scripts": {
         "test": "exit 0"
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:openintegrationhub/Data-and-Domain-Models.git"
+        "url": "oih-playground@git.elastic.io:wice.git"
     },
     "author": "Wice GmbH",
     "license": "BSD-2-Clause",
