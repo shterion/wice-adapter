@@ -1,5 +1,4 @@
 # elasticio-wice-component
-<<<<<<< HEAD
 > [WICE](https://snazzycontacts.com) Node.js component for [elastic.io platform](http://www.elastic.io "elastic.io platform")
 
 This is a connector(*component*) which connects [WICE](https://snazzycontacts.com) with [elastic.io platform](http://www.elastic.io "elastic.io platform"). With this connector you are able to create different flows in [elastic.io](http://www.elastic.io "elastic.io platform"). The component supports **"Triggers"** (e.g. ``getPersons``, ``getOrganizations``) as well as **"Actions"** (e.g. ``updatePerson``, ``createOrganization``, ``updatePersonsOrganization``, etc.), therefore with this component you could both read and fetch data from [WICE](https://snazzycontacts.com) and write and save data in [WICE](https://snazzycontacts.com) via [elastic.io platform](http://www.elastic.io "elastic.io platform").
@@ -122,6 +121,4 @@ Update organization action (``updateOrganization.js``) updates a specific organi
         |-- triggers
             |-- getOrganizationsPolling.js
             |-- getPersonsPolling.js
-=======
 > [Wice CRM](https://wice.de/) Node.js component for [elastic.io platform](http://www.elastic.io "elastic.io platform")
->>>>>>> 4e2998ec11eb04bc8fce3d942d13e371e9f6166f
