@@ -8,19 +8,19 @@
         "note": "Article's rowid",
         "placeholder": "782572"
       },
-      "number": {
-        "type": "string",
-        "required": true,
-        "title": "Number",
-        "note": "Article's number",
-        "placeholder": "5746"
-      },
       "description": {
         "type": "string",
         "required": true,
         "title": "description",
         "note": "Article's description name",
         "placeholder": "Arduino Nano"
+      },
+      "number": {
+        "type": "string",
+        "required": true,
+        "title": "Number",
+        "note": "Article's number",
+        "placeholder": "5746"
       },
       "sales_price": {
         "type": "string",
