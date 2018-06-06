@@ -1,13 +1,6 @@
 {
     "type": "object",
     "properties": {
-      "number": {
-        "type": "string",
-        "required": true,
-        "title": "Number",
-        "note": "Article's number",
-        "placeholder": "5746"
-      },
       "description": {
         "type": "string",
         "required": true,
@@ -15,30 +8,37 @@
         "note": "Article's description name",
         "placeholder": "Arduino Nano"
       },
+      "number": {
+        "type": "string",
+        "required": false,
+        "title": "Number",
+        "note": "Article's number",
+        "placeholder": "5746"
+      },
       "sales_price": {
         "type": "string",
-        "required": true,
+        "required": false,
         "title": "Price",
         "note": "Sales price",
         "placeholder": "11.99"
       },
       "purchase_price": {
         "type": "string",
-        "required": true,
+        "required": false,
         "title": "Price",
         "note": "Article's purchased price",
         "placeholder": "10.99"
       },
       "in_stock": {
         "type": "string",
-        "required": true,
+        "required": false,
         "title": "In stock",
         "note": "Article's availability",
         "placeholder": "79"
       },
       "unit": {
         "type": "string",
-        "required": true,
+        "required": false,
         "title": "Unit",
         "note": "Article's unit",
         "placeholder": "Piece"
