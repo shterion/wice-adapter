@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Wice GmbH",
-  "license": "ISC",
+  "license": "Apache 2.0",
   "dependencies": {
     "nodemon": "^1.17.4",
-    "request": "^2.83.0",
+    "request": "^2.87.0",
     "request-promise": "^4.2.2"
   }
 }
