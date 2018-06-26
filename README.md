@@ -1,14 +1,14 @@
 # elasticio-wice-component
-> [WICE](https://snazzycontacts.com) Node.js component for [elastic.io platform](http://www.elastic.io "elastic.io platform")
+> [WICE](https://wice.de/) Node.js component for [elastic.io platform](http://www.elastic.io "elastic.io platform")
 
-This is a connector(*component*) which connects [WICE](https://snazzycontacts.com) with [elastic.io platform](http://www.elastic.io "elastic.io platform"). With this connector you are able to create different flows in [elastic.io](http://www.elastic.io "elastic.io platform"). The component supports **"Triggers"** (e.g. ``getPersons``, ``getOrganizations``) as well as **"Actions"** (e.g. ``updatePerson``, ``createOrganization``, ``updatePersonsOrganization``, etc.), therefore with this component you could both read and fetch data from [WICE](https://snazzycontacts.com) and write and save data in [WICE](https://snazzycontacts.com) via [elastic.io platform](http://www.elastic.io "elastic.io platform").
+This is a connector(*component*) which connects [WICE](https://wice.de/) with [elastic.io platform](http://www.elastic.io "elastic.io platform"). With this connector you are able to create different flows in [elastic.io](http://www.elastic.io "elastic.io platform"). The component supports **"Triggers"** (e.g. ``getPersons``, ``getOrganizations``) as well as **"Actions"** (e.g. ``updatePerson``, ``createOrganization``, ``updatePersonsOrganization``, etc.), therefore with this component you could both read and fetch data from [WICE](https://wice.de/) and write and save data in [WICE](https://wice.de/) via [elastic.io platform](http://www.elastic.io "elastic.io platform").
 
 ## Before you begin
 
-Before you can use the component you **must be a registered WICE user**. Please visit the home page of [https://snazzycontacts.com](https://snazzycontacts.com) to sign up.
-> Any attempt to reach [WICE](https://snazzycontacts.com) endpoints without registration will not be successful
+Before you can use the component you **must be a registered WICE user**. Please visit the home page of [https://wice.de/](https://wice.de/) to sign up.
+> Any attempt to reach [WICE](https://wice.de/) endpoints without registration will not be successful
 
-After you are already registered in [WICE](https://snazzycontacts.com) you have to activate your **API Key** (in [WICE](https://snazzycontacts.com) named *Data Sharing Key*).
+After you are already registered in [WICE](https://wice.de/) you have to activate your **API Key** (in [WICE](https://wice.de/) named *Data Sharing Key*).
 > For activation you **have to be logged in**, then click of ``Administration`` and under ```Einstellungen``` click of ``Unternehmensdaten``. Once you are in ``Unternehmensdaten`` click of the button ``Data Sharing aktivieren`` for generating your API key.
 
 Once the activation is done you have an access to **API Key** which is required for an authentication when you make a request to WICE.
@@ -28,41 +28,41 @@ The connector supports the following **actions** and **triggers**:
   - Update person's organizations (```updatePersonsOrganization.js```)
   - Update organization (```updateOrganization.js```)
 
-> **NOTE:** As mentioned before, to perform an action or a trigger you have to be a registered [WICE](https://snazzycontacts.com) user and you have to pass your **API Key** (in [WICE](https://snazzycontacts.com) named *Data Sharing Key*) when you send a request.
+> **NOTE:** As mentioned before, to perform an action or a trigger you have to be a registered [WICE](https://wice.de/) user and you have to pass your **API Key** (in [WICE](https://wice.de/) named *Data Sharing Key*) when you send a request.
 
-In each trigger or action, before sending a request we create a session in [WICE](https://snazzycontacts.com) via calling a function ```createSession()``` from ```snazzy.js``` file, which is located in directory **actions**. This function creates a session and as a second parameter accepts a callback function ```continueOnSuccess()``` which calls the certain trigger or the action.
+In each trigger or action, before sending a request we create a session in [WICE](https://wice.de/) via calling a function ```createSession()``` from ```snazzy.js``` file, which is located in directory **actions**. This function creates a session and as a second parameter accepts a callback function ```continueOnSuccess()``` which calls the certain trigger or the action.
 
 ##### Get persons
 
-Get persons trigger (```getPersonsPolling.js```) performs a request which fetch all persons saved by a user in [WICE](https://snazzycontacts.com). The response consist of an **array of objects** with all persons and their attributes.
+Get persons trigger (```getPersonsPolling.js```) performs a request which fetch all persons saved by a user in [WICE](https://wice.de/). The response consist of an **array of objects** with all persons and their attributes.
 
 ##### Get organizations
 
-Get organizations trigger (```getOrganizationsPolling.js```) performs a request which fetch all organizations saved by a user in [WICE](https://snazzycontacts.com). The response consist of an **array of objects** with all organizations and their attributes.
+Get organizations trigger (```getOrganizationsPolling.js```) performs a request which fetch all organizations saved by a user in [WICE](https://wice.de/). The response consist of an **array of objects** with all organizations and their attributes.
 
 ##### Create person
 
-Create person action (``createPerson.js``) creates a person in [WICE](https://snazzycontacts.com). At this point of time the function accepts as required parameters ``name`` and ``firstname``, but of course you can also pass other parameters like ``email``, ``phone``, ``salutation``, ``title``, etc.
+Create person action (``createPerson.js``) creates a person in [WICE](https://wice.de/). At this point of time the function accepts as required parameters ``name`` and ``firstname``, but of course you can also pass other parameters like ``email``, ``phone``, ``salutation``, ``title``, etc.
 
 ##### Create organization
 
-Create organization action (``createOrganization.js``) creates a new organization in [WICE](https://snazzycontacts.com). This function accepts as required parameter only ``name``, but if you wish you can also pass ``town``, ``street``, ``street_number``, ``zip_code``, ``country``etc.
+Create organization action (``createOrganization.js``) creates a new organization in [WICE](https://wice.de/). This function accepts as required parameter only ``name``, but if you wish you can also pass ``town``, ``street``, ``street_number``, ``zip_code``, ``country``etc.
 
 ##### Delete person
 
-Delete person action (``deletePerson.js``) deletes a person in [WICE](https://snazzycontacts.com). The required parameter which must be passed is ``rowid`` of the person which you want to delete.
+Delete person action (``deletePerson.js``) deletes a person in [WICE](https://wice.de/). The required parameter which must be passed is ``rowid`` of the person which you want to delete.
 
 >**NOTE**: We do ***NOT*** really delete the person from our database, we just set a value in field ``is_deleted`` to ``1`` which actually ***hides*** the person from the view.
 
 ##### Delete organization
 
-Delete organization action (``deleteOrganization.js``) deletes an organization in [WICE](https://snazzycontacts.com). The required parameter which must be passed is ``rowid`` of the organization which you want to delete.
+Delete organization action (``deleteOrganization.js``) deletes an organization in [WICE](https://wice.de/). The required parameter which must be passed is ``rowid`` of the organization which you want to delete.
 
 >**NOTE**: We do ***NOT*** really delete the organization from our database, we just set a value in field ``is_deleted`` to ``1`` which actually ***hides*** the organization from the view.
 
 ##### Update person
 
-Update person action (``updatePerson.js``) updates a specific person in [WICE](https://snazzycontacts.com). The function accepts as required parameter ``rowid`` of the person and respectively the values of the properties which you want to update.
+Update person action (``updatePerson.js``) updates a specific person in [WICE](https://wice.de/). The function accepts as required parameter ``rowid`` of the person and respectively the values of the properties which you want to update.
 
 ##### Update person's organizations
 Update person's organizations action (```updatePersonsOrganization.js```) assign one person to one or more organizations. This means that one person could be  assigned to as many organizations as you want. The function accepts as required parameters ``same_contactperson``, ``for_rowid``, ````name```` und ``firstname``.
@@ -77,7 +77,7 @@ Update person's organizations action (```updatePersonsOrganization.js```) assign
 
 ##### Update organization
 
-Update organization action (``updateOrganization.js``) updates a specific organization in [WICE](https://snazzycontacts.com). The function accepts as required parameter ``rowid`` of the organization  and respectively the values of the properties which you want to update.
+Update organization action (``updateOrganization.js``) updates a specific organization in [WICE](https://wice.de/). The function accepts as required parameter ``rowid`` of the organization  and respectively the values of the properties which you want to update.
 
 ***
 
