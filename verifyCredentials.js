@@ -33,7 +33,6 @@ limitations under the License.
 //   cb(null, {verified: true});
 // }
 
-
 const { createSession } = require('./lib/utils/wice');
 
 async function verifyCredentials(credentials, cb) {
@@ -42,10 +41,10 @@ async function verifyCredentials(credentials, cb) {
   try {
     const cfg = {
       apikey: credentials.apikey,
-      "mandant_name": credentials.mandant,
-      "username": credentials.username,
-      "password": credentials.password,
-      "X-API-KEY": credentials.apikey
+      mandant_name: credentials.mandant,
+      username: credentials.username,
+      password: credentials.password,
+      X-API-KEY: credentials.apikey
     };
     console.log(`CONFIG: ${cfg}`);
 
