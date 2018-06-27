@@ -46,9 +46,9 @@ async function verifyCredentials(credentials, cb) {
       password: credentials.password,
       apikey: credentials.apikey
     };
-    console.log(`CONFIG: ${cfg}`);
 
     const session = await createSession(cfg);
+    console.log(session);
 
     if (session) {
       cb(null, { verified: true });
