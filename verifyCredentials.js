@@ -37,18 +37,17 @@ const { createSession } = require('./lib/utils/wice');
 
 async function verifyCredentials(credentials, cb) {
   console.log('Credentials passed for verification %j', credentials)
-console.log(credentials.client);
   try {
     const cfg = {
       apikey: credentials.apikey,
-      mandant_name: credentials.client,
+      mandant_name: credentials.mandant,
       username: credentials.username,
       password: credentials.password,
       apikey: credentials.apikey
     };
+    console.log(`IN VERIFY: ${JSON.stringify(cfg, undefined, 2)}`);
 
     const session = await createSession(cfg);
-    console.log(session);
 
     if (session) {
       cb(null, { verified: true });
