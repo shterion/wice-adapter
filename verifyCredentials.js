@@ -37,7 +37,7 @@ const { createSession } = require('./lib/utils/wice');
 
 async function verifyCredentials(credentials, cb) {
   console.log('Credentials passed for verification %j', credentials)
-
+console.log(credentials.client);
   try {
     const cfg = {
       apikey: credentials.apikey,
