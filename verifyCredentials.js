@@ -15,24 +15,6 @@ limitations under the License.
  */
 "use strict";
 
-// module.exports = function verifyCredentials(credentials, cb) {
-//   console.log('Credentials passed for verification %j', credentials)
-//
-//   if (!credentials.apikey) {
-//     console.log('Invalid apikey');
-//     return cb(null, {verified: false});
-//   }
-//
-//   if (!credentials.mandant) {
-//     console.log('Invalid mandant');
-//     return cb(null, {verified: false});
-//   }
-//
-//   console.log('Credentials verified successfully');
-//
-//   cb(null, {verified: true});
-// }
-
 const { createSession } = require('./lib/utils/wice');
 
 async function verifyCredentials(credentials, cb) {
@@ -45,7 +27,6 @@ async function verifyCredentials(credentials, cb) {
       password: credentials.password,
       apikey: credentials.apikey
     };
-    console.log(`IN VERIFY: ${JSON.stringify(cfg, undefined, 2)}`);
 
     const session = await createSession(cfg);
 
