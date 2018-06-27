@@ -44,7 +44,7 @@ async function verifyCredentials(credentials, cb) {
       mandant_name: credentials.mandant,
       username: credentials.username,
       password: credentials.password,
-      X-API-KEY: credentials.apikey
+      apikey: credentials.apikey
     };
     console.log(`CONFIG: ${cfg}`);
 
