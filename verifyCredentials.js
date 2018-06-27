@@ -49,8 +49,13 @@ async function verifyCredentials(credentials, cb) {
     };
     console.log(`CONFIG: ${cfg}`);
 
-     const session = await createSession(cfg);
-     console.log(session);
+    const session = await createSession(cfg);
+
+    if (session) {
+      cb(null, { verified: true });
+      console.log('Credentials verified successfully');
+      return true;
+    }
 
     throw new Error('Error in validating credentials!');
     return false;
