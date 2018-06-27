@@ -1,6 +1,6 @@
 {
     "name": "@elasticio/wice-component-nodejs",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "elastic.io Wice component",
     "scripts": {
         "test": "exit 0"
@@ -10,7 +10,7 @@
         "url": "oih-playground@git.elastic.io:wice.git"
     },
     "author": "Wice GmbH",
-    "license": "BSD-2-Clause",
+    "license": "Apache 2.0",
     "engines": {
         "node": "8.6.0",
         "npm": ">=5.4"

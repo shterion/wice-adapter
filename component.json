@@ -28,7 +28,7 @@
       "password": {
         "label": "Your password",
         "required": true,
-        "viewClass": "TextFieldView",
+        "viewClass": "PasswordFieldView",
         "note": "Use your password for Wice"
       }
     }
