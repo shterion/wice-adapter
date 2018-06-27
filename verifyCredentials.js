@@ -22,7 +22,7 @@ async function verifyCredentials(credentials, cb) {
   try {
     const cfg = {
       apikey: credentials.apikey,
-      mandant_name: credentials.mandant,
+      mandant_name: credentials.client,
       username: credentials.username,
       password: credentials.password,
       apikey: credentials.apikey
