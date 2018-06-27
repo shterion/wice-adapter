@@ -15,14 +15,14 @@
         "label": "Client",
         "required": true,
         "viewClass": "TextFieldWithNoteView",
-        "note": "Please use <b>Wice</b> client.",
+        "note": "Please use <b>WICE</b> client.",
         "placeholder": "wicegmbh"
       },
       "username": {
         "label": "Your username",
         "required": true,
         "viewClass": "TextFieldView",
-        "note": "Use your username registerd in Wice",
+        "note": "Use your username registerd in <b>WICE</b>",
         "placeholder": "johndoe"
       },
       "password": {
