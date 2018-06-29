@@ -25,8 +25,8 @@
     }
   },
   "triggers": {
-    "getPersonsPolling": {
-      "main": "./lib/triggers/getPersonsPolling.js",
+    "getPersons": {
+      "main": "./lib/triggers/getPersons.js",
       "type": "polling",
       "description": "Fetch all persons from wice saved by the user",
       "title": "Get Persons",
@@ -34,8 +34,8 @@
         "out": "./lib/schemas/getPersons.out.json"
       }
     },
-    "getOrganizationsPolling": {
-      "main": "./lib/triggers/getOrganizationsPolling.js",
+    "getOrganizations": {
+      "main": "./lib/triggers/getOrganizations.js",
       "type": "polling",
       "description": "Fetch all organizations from wice saved by the user",
       "title": "Get Organizations",
@@ -43,8 +43,8 @@
         "out": "./lib/schemas/getOrganizations.out.json"
       }
     },
-    "getArticlesPolling": {
-      "main": "./lib/triggers/getArticlesPolling.js",
+    "getArticles": {
+      "main": "./lib/triggers/getArticles.js",
       "type": "polling",
       "description": "Fetch all articles from wice saved by the user",
       "title": "Get Articles",
@@ -52,8 +52,8 @@
         "out": "./lib/schemas/getArticlesPolling.out.json"
       }
     },
-    "getPersonPolling": {
-        "main": "./lib/triggers/getPersonPolling.js",
+    "getPerson": {
+        "main": "./lib/triggers/getPerson.js",
         "type": "polling",
         "description": "Get a single user",
         "title": "Get a Person",
@@ -61,8 +61,8 @@
           "out": "./lib/schemas/getPerson.out.json"
         }
       },
-      "getOrganizationPolling": {
-        "main": "./lib/triggers/getOrganizationPolling.js",
+      "getOrganization": {
+        "main": "./lib/triggers/getOrganization.js",
         "type": "polling",
         "description": "Fetch a single Organization",
         "title": "Get a Organization",
@@ -70,8 +70,8 @@
           "out": "./lib/schemas/getOrganization.out.json"
         }
       },
-      "getArticlePolling": {
-        "main": "./lib/triggers/getArticlePolling.js",
+      "getArticle": {
+        "main": "./lib/triggers/getArticle.js",
         "type": "polling",
         "description": "Get a single article",
         "title": "Get Article",
