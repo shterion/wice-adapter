@@ -52,8 +52,8 @@
         "out": "./lib/schemas/getDeletedPersons.out.json"
       }
     },
-    "getOrganizationsPolling": {
-      "main": "./lib/triggers/getOrganizationsPolling.js",
+    "getOrganizations": {
+      "main": "./lib/triggers/getOrganizations.js",
       "type": "polling",
       "description": "Get all organizations saved by the user",
       "title": "Get organizations",
@@ -70,8 +70,8 @@
         "out": "./lib/schemas/getDeletedOrganizations.out.json"
       }
     },
-    "getArticlesPolling": {
-      "main": "./lib/triggers/getArticlesPolling.js",
+    "getArticles": {
+      "main": "./lib/triggers/getArticles.js",
       "type": "polling",
       "description": "Get all articles saved by the user",
       "title": "Get articles",
