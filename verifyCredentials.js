@@ -13,55 +13,55 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
  */
-// "use strict";
-//
-// const { createSession } = require('./lib/utils/wice');
-//
-// async function verifyCredentials(credentials, cb) {
-//   console.log('Credentials passed for verification %j', credentials)
-//   try {
-//     const cfg = {
-//       apikey: credentials.apikey,
-//       mandant_name: credentials.mandant_name,
-//       username: credentials.username,
-//       password: credentials.password,
-//       apikey: credentials.apikey
-//     };
-//
-//     const session = await createSession(cfg);
-//
-//     if (session) {
-//       cb(null, { verified: true });
-//       console.log('Credentials verified successfully');
-//       return true;
-//     }
-//
-//     throw new Error('Error in validating credentials!');
-//     return false;
-//   } catch (e) {
-//     console.log(`${e}`);
-//     throw new Error(e);
-//   }
-// }
-//
-// module.exports = verifyCredentials;
-
 "use strict";
 
-module.exports = function verifyCredentials(credentials, cb) {
+const { createSession } = require('./lib/utils/wice');
+
+async function verifyCredentials(credentials, cb) {
   console.log('Credentials passed for verification %j', credentials)
+  try {
+    const cfg = {
+      apikey: credentials.apikey,
+      mandant_name: credentials.mandant_name,
+      username: credentials.username,
+      password: credentials.password,
+      apikey: credentials.apikey
+    };
 
-  if (!credentials.apikey) {
-    console.log('Invalid apikey');
-    return cb(null, {verified: false});
+    const session = await createSession(cfg);
+
+    if (session) {
+      cb(null, { verified: true });
+      console.log('Credentials verified successfully');
+      return true;
+    }
+
+    throw new Error('Error in validating credentials!');
+    return false;
+  } catch (e) {
+    console.log(`${e}`);
+    throw new Error(e);
   }
-
-  if (!credentials.mandant) {
-    console.log('Invalid mandant');
-    return cb(null, {verified: false});
-  }
-
-  console.log('Credentials verified successfully');
-
-  cb(null, {verified: true});
 }
+
+module.exports = verifyCredentials;
+
+// "use strict";
+//
+// module.exports = function verifyCredentials(credentials, cb) {
+//   console.log('Credentials passed for verification %j', credentials)
+//
+//   if (!credentials.apikey) {
+//     console.log('Invalid apikey');
+//     return cb(null, {verified: false});
+//   }
+//
+//   if (!credentials.mandant) {
+//     console.log('Invalid mandant');
+//     return cb(null, {verified: false});
+//   }
+//
+//   console.log('Credentials verified successfully');
+//
+//   cb(null, {verified: true});
+// }
