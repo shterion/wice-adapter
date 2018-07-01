@@ -4,11 +4,12 @@
   "description": "elasticio-wice-component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "author": "Wice GmbH",
   "license": "Apache 2.0",
   "dependencies": {
+    "jest": "^23.2.0",
     "nodemon": "^1.17.4",
     "request": "^2.87.0",
     "request-promise": "^4.2.2"
