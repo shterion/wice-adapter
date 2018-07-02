@@ -13,22 +13,23 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
  */
-"use strict";
-
-module.exports = function verifyCredentials(credentials, cb) {
-  console.log('Credentials passed for verification %j', credentials)
-
-  if (!credentials.apikey) {
-    console.log('Invalid apikey');
-    return cb(null, {verified: false});
-  }
-
-  if (!credentials.mandant) {
-    console.log('Invalid mandant');
-    return cb(null, {verified: false});
-  }
-
-  console.log('Credentials verified successfully');
-
-  cb(null, {verified: true});
-}
+ 
+// "use strict";
+//
+// module.exports = function verifyCredentials(credentials, cb) {
+//   console.log('Credentials passed for verification %j', credentials)
+//
+//   if (!credentials.apikey) {
+//     console.log('Invalid apikey');
+//     return cb(null, {verified: false});
+//   }
+//
+//   if (!credentials.mandant) {
+//     console.log('Invalid mandant');
+//     return cb(null, {verified: false});
+//   }
+//
+//   console.log('Credentials verified successfully');
+//
+//   cb(null, {verified: true});
+// }
