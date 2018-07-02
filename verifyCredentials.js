@@ -27,13 +27,11 @@ async function verifyCredentials(credentials, cb) {
       apikey: credentials.apikey
     };
 
-    console.log(`CGF: ${cfg}`);
-
     const session = await createSession(cfg);
 
     if (session) {
       cb(null, { verified: true });
-      console.log('Credentials verified successfully');
+      console.log('Credentials verified successfully!');
       return true;
     }
 
