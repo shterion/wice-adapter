@@ -1,13 +1,13 @@
 {
-    "name": "@elasticio/wice-component-nodejs",
-    "version": "0.1.0",
+    "name": "wice-component",
+    "version": "0.4.0",
     "description": "elastic.io Wice component",
     "scripts": {
         "test": "exit 0"
     },
     "repository": {
         "type": "git",
-        "url": "oih-playground@git.elastic.io:wice.git"
+        "url": "git@github.com:openintegrationhub/Connectors.git"
     },
     "author": "Wice GmbH",
     "license": "Apache 2.0",
