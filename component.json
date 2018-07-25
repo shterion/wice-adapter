@@ -163,8 +163,8 @@
       }
     },
     "deletePerson": {
-      "title": "Delete person",
-      "description": "Delete a person",
+      "title": "Delete Person",
+      "description": "Given an id, deletes the corresponding person.",
       "main": "./lib/actions/deletePerson.js",
       "metadata": {
         "in": "./lib/schemas/deletePerson.in.json",
@@ -172,8 +172,8 @@
       }
     },
     "deleteOrganization": {
-      "title": "Delete organization",
-      "description": "Delete an organization",
+      "title": "Delete Organization",
+      "description": "Given an id, deletes the corresponding organization.",
       "main": "./lib/actions/deleteOrganization.js",
       "metadata": {
         "in": "./lib/schemas/deleteOrganization.in.json",
@@ -181,8 +181,8 @@
       }
     },
     "deleteArticle": {
-      "title": "Delete article",
-      "description": "Delete an article",
+      "title": "Delete Article",
+      "description": "Given an id, deletes the corresponding article.",
       "main": "./lib/actions/deleteArticle.js",
       "metadata": {
         "in": "./lib/schemas/deleteArticle.in.json",
