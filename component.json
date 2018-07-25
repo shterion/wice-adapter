@@ -110,29 +110,29 @@
     },
     "upsertPerson": {
       "title": "Upsert Person",
-      "description": "Create a new person",
-      "main": "./lib/actions/createPerson.js",
+      "description": "Update an existing person if it already exists. Otherwise create a new one.",
+      "main": "./lib/actions/upsertPerson.js",
       "metadata": {
-        "in": "./lib/schemas/createPerson.in.json",
-        "out": "./lib/schemas/createPerson.out.json"
+        "in": "./lib/schemas/upsertPerson.in.json",
+        "out": "./lib/schemas/upsertPerson.out.json"
       }
     },
     "upsertOrganization": {
       "title": "Upsert Organization",
-      "description": "Create an organization",
-      "main": "./lib/actions/createOrganization.js",
+      "description": "Update an existing organization if it already exists. Otherwise create a new one.",
+      "main": "./lib/actions/upsertOrganization.js",
       "metadata": {
-        "in": "./lib/schemas/createOrganization.in.json",
-        "out": "./lib/schemas/createOrganization.out.json"
+        "in": "./lib/schemas/upsertOrganization.in.json",
+        "out": "./lib/schemas/upsertOrganization.out.json"
       }
     },
     "upsertArticle": {
       "title": "Upsert Article",
-      "description": "Create an article",
-      "main": "./lib/actions/createArticle.js",
+      "description": "Update an existing article if it already exists. Otherwise create a new one.",
+      "main": "./lib/actions/upsertArticle.js",
       "metadata": {
-        "in": "./lib/schemas/createArticle.in.json",
-        "out": "./lib/schemas/createArticle.out.json"
+        "in": "./lib/schemas/upsertArticle.in.json",
+        "out": "./lib/schemas/upsertArticle.out.json"
       }
     },
     "updatePerson": {
