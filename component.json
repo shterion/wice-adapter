@@ -81,13 +81,13 @@
     }
   },
   "actions": {
-    "getPersonPolling": {
+    "lookupPerson": {
       "title": "Lookup Person",
       "description": "Given an id, fetches the corresponding person.",
-      "main": "./lib/actions/getPersonPolling.js",
+      "main": "./lib/actions/lookupPerson.js",
       "metadata": {
-        "in": "./lib/schemas/getPerson.in.json",
-        "out": "./lib/schemas/getPerson.out.json"
+        "in": "./lib/schemas/lookupPerson.in.json",
+        "out": "./lib/schemas/lookupPerson.out.json"
       }
     },
     "lookupOrganization": {
