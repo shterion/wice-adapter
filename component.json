@@ -90,7 +90,7 @@
         "out": "./lib/schemas/getPerson.out.json"
       }
     },
-    "getOrganizationPolling": {
+    "lookupOrganization": {
       "title": "Lookup Organization",
       "description": "Given an id, fetches the corresponding organization.",
       "main": "./lib/actions/lookupOrganization.js",
