@@ -82,9 +82,8 @@
   },
   "actions": {
     "getPersonPolling": {
-      "description": "Get a single user",
-      "title": "Get person",
-      "type": "polling",
+      "title": "Lookup Person",
+      "description": "Given an id, fetches the corresponding person.",
       "main": "./lib/actions/getPersonPolling.js",
       "metadata": {
         "in": "./lib/schemas/getPerson.in.json",
@@ -92,13 +91,12 @@
       }
     },
     "getOrganizationPolling": {
-      "title": "Get organization",
-      "description": "Get a single organization",
-      "type": "polling",
-      "main": "./lib/actions/getOrganizationPolling.js",
+      "title": "Lookup Organization",
+      "description": "Given an id, fetches the corresponding organization.",
+      "main": "./lib/actions/lookupOrganization.js",
       "metadata": {
-        "in": "./lib/schemas/getOrganization.in.json",
-        "out": "./lib/schemas/getOrganization.out.json"
+        "in": "./lib/schemas/lookupOrganization.in.json",
+        "out": "./lib/schemas/lookupOrganization.out.json"
       }
     },
     "lookupArticle": {
