@@ -108,8 +108,8 @@
         "out": "./lib/schemas/lookupArticle.out.json"
       }
     },
-    "createPerson": {
-      "title": "Create person",
+    "upsertPerson": {
+      "title": "Upsert Person",
       "description": "Create a new person",
       "main": "./lib/actions/createPerson.js",
       "metadata": {
@@ -117,8 +117,8 @@
         "out": "./lib/schemas/createPerson.out.json"
       }
     },
-    "createOrganization": {
-      "title": "Create organization",
+    "upsertOrganization": {
+      "title": "Upsert Organization",
       "description": "Create an organization",
       "main": "./lib/actions/createOrganization.js",
       "metadata": {
@@ -126,8 +126,8 @@
         "out": "./lib/schemas/createOrganization.out.json"
       }
     },
-    "createArticle": {
-      "title": "Create article",
+    "upsertArticle": {
+      "title": "Upsert Article",
       "description": "Create an article",
       "main": "./lib/actions/createArticle.js",
       "metadata": {
