@@ -37,8 +37,8 @@
     "getPersonsPolling": {
       "main": "./lib/triggers/getPersonsPolling.js",
       "type": "polling",
-      "description": "Get all persons saved by the user",
-      "title": "Get persons",
+      "title": "Fetch new and updated persons(getPersons - Polling)",
+      "description": "Get WiceCRM persons which have recently been modified or created",
       "metadata": {
         "out": "./lib/schemas/getPersons.out.json"
       }
@@ -46,8 +46,8 @@
     "getDeletedPersonsPolling": {
       "main": "./lib/triggers/getDeletedPersonsPolling.js",
       "type": "polling",
-      "description": "Get all deleted persons",
-      "title": "Get deleted persons",
+      "title": "Fetch deleted persons (getDeletedPersons - Polling)",
+      "description": "Get WiceCRM persons which have recently been deleted",
       "metadata": {
         "out": "./lib/schemas/getDeletedPersons.out.json"
       }
@@ -55,8 +55,8 @@
     "getOrganizationsPolling": {
       "main": "./lib/triggers/getOrganizationsPolling.js",
       "type": "polling",
-      "description": "Get all organizations saved by the user",
-      "title": "Get organizations",
+      "title": "Fetch new and updated organizations(getOrganizations- Polling)",
+      "description": "Get WiceCRM organizations which have recently been modified or created",
       "metadata": {
         "out": "./lib/schemas/getOrganizations.out.json"
       }
@@ -64,8 +64,8 @@
     "getDeletedOrganizationsPolling": {
       "main": "./lib/triggers/getDeletedOrganizationsPolling.js",
       "type": "polling",
-      "description": "Get all deleted organizations",
-      "title": "Get deleted organizations",
+      "title": "Fetch deleted organizations (getDeletedPersons - Polling)",
+      "description": "Get WiceCRM organizations which have recently been deleted",
       "metadata": {
         "out": "./lib/schemas/getDeletedOrganizations.out.json"
       }
@@ -73,8 +73,8 @@
     "getArticlesPolling": {
       "main": "./lib/triggers/getArticlesPolling.js",
       "type": "polling",
-      "description": "Get all articles saved by the user",
-      "title": "Get articles",
+      "title": "Fetch new and updated articles(getArticles- Polling)",
+      "description": "Get WiceCRM articles which have recently been modified or created",
       "metadata": {
         "out": "./lib/schemas/getArticles.out.json"
       }
@@ -103,9 +103,8 @@
     },
     "lookupArticle": {
       "main": "./lib/actions/lookupArticle.js",
-      "type": "polling",
       "description": "Get a single article",
-      "title": "Get article",
+      "title": "Lookup Article",
       "metadata": {
         "in": "./lib/schemas/lookupArticle.in.json",
         "out": "./lib/schemas/lookupArticle.out.json"
