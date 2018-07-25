@@ -101,14 +101,14 @@
         "out": "./lib/schemas/getOrganization.out.json"
       }
     },
-    "getArticlePolling": {
-      "main": "./lib/actions/getArticlePolling.js",
+    "lookupArticle": {
+      "main": "./lib/actions/lookupArticle.js",
       "type": "polling",
       "description": "Get a single article",
       "title": "Get article",
       "metadata": {
-        "in": "./lib/schemas/getArticle.in.json",
-        "out": "./lib/schemas/getArticle.out.json"
+        "in": "./lib/schemas/lookupArticle.in.json",
+        "out": "./lib/schemas/lookupArticle.out.json"
       }
     },
     "createPerson": {
