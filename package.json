@@ -15,7 +15,7 @@
   "scripts": {
     "test": "NODE_ENV=test mocha spec/* --timeout 10000",
     "test-watch": "nodemon --exec \"npm test \""
-   },
+  },
   "engines": {
     "node": "8.6.0",
     "npm": ">=5.4"
