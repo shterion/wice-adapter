@@ -6,6 +6,14 @@ const configOptions = {
   apikey: "m3n8qxl42fmxlhqln8c6rwblb4x9m51r",
 };
 
+const options = {
+  method: 'POST',
+  uri: 'https://oihwice.wice-net.de/plugin/wp_elasticio_backend/json',
+  headers: {
+    'X-API-KEY': 'm3n8qxl42fmxlhqln8c6rwblb4x9m51r'
+  }
+};
+
 const organizations = [{
     body: {
       name: 'Company Ltd.',
@@ -40,11 +48,23 @@ const persons = [{
   },
   {
     body: {
-      name: 'Kolarov',
+      name: 'Kolarovv',
       firstname: 'Sebastian',
       email: 'kolarov@mail.com'
     }
+  }
+];
+
+const articles = [{
+    body: {
+      description: 'Arduino Nano'
+    }
   },
+  {
+    body: {
+      description: 'Raspberry Pi'
+    }
+  }
 ];
 
 module.exports = {
@@ -52,4 +72,9 @@ module.exports = {
   persons,
   organizations
 }
-module.exports = { configOptions };
+module.exports = {
+  options,
+  configOptions,
+  persons,
+  organizations
+};
