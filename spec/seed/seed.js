@@ -3,14 +3,14 @@ const configOptions = {
   username: "syanev ",
   password: "d36adb53",
   path: "https://oihwice.wice-net.de",
-  apikey: "m3n8qxl42fmxlhqln8c6rwblb4x9m51r",
+  apikey: "fsuogsi9p1im1gpnhvapjdtx94z46qye",
 };
 
 const options = {
   method: 'POST',
   uri: 'https://oihwice.wice-net.de/plugin/wp_elasticio_backend/json',
   headers: {
-    'X-API-KEY': 'm3n8qxl42fmxlhqln8c6rwblb4x9m51r'
+    'X-API-KEY': 'fsuogsi9p1im1gpnhvapjdtx94z46qye'
   }
 };
 
