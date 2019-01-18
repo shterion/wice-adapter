@@ -102,7 +102,7 @@
     "private_country": {
       "type": "string",
       "required": true,
-      "title": "Coutry",
+      "title": "Country",
       "note": "Person's country",
       "placeholder": "Germany"
     },
