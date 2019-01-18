@@ -74,7 +74,7 @@
     "country": {
       "type": "string",
       "required": false,
-      "title": "Coutry",
+      "title": "Country",
       "note": "Organization's country",
       "placeholder": "Germany"
     }
