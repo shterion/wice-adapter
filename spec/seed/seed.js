@@ -8,7 +8,7 @@ const configOptions = {
 
 const options = {
   method: 'POST',
-  uri: 'https://oihwice.wice-net.de/plugin/wp_elasticio_backend/json',
+  uri: 'https://oihwice.wice-net.de/plugin/wp_wice_client_api_backend/json',
   headers: {
     'X-API-KEY': 'fsuogsi9p1im1gpnhvapjdtx94z46qye'
   }
