@@ -10,7 +10,7 @@ const options = {
   method: 'POST',
   uri: 'https://oihwice.wice-net.de/plugin/wp_wice_client_api_backend/json',
   headers: {
-    'X-API-KEY': 'fsuogsi9p1im1gpnhvapjdtx94z46qye'
+    'X-API-KEY': undefined //'fsuogsi9p1im1gpnhvapjdtx94z46qye'
   }
 };
 

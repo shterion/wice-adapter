@@ -30,7 +30,7 @@ describe('Test actions', () => {
     expect(newOrganization).to.have.property('rowid');
     expect(newOrganization).to.have.property('for_rowid');
   });
-  
+
   it('should create or update an article', async () => {
     const cookie = await createSession(configOptions);
     const article = seed.organizations[0];
