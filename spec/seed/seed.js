@@ -70,11 +70,13 @@ const articles = [{
 module.exports = {
   configOptions,
   persons,
-  organizations
+  organizations,
+  articles
 }
 module.exports = {
   options,
   configOptions,
   persons,
-  organizations
+  organizations,
+  articles
 };
