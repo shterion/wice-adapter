@@ -1,4 +1,4 @@
-FROM node:8.11.1-alpine
+FROM node:10-alpine
 LABEL NAME="wice-adapter"
 LABEL MAINTAINER Shterion Yanev "syanev@wice.de"
 LABEL SUMMARY="This image is used to start the Wice CRM for OIH"
