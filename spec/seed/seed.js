@@ -1,70 +1,70 @@
 const configOptions = {
-  client_name: "sandbox",
-  username: "shterion ",
-  password: "d36adb53",
-  path: "https://oihwice.wice-net.de",
-  apikey: "fsuogsi9p1im1gpnhvapjdtx94z46qye",
+  client_name: 'sandbox',
+  username: 'shterion ',
+  password: 'd36adb53',
+  path: 'http://oihwice2.wice-net.de',
+  apikey: 'fsuogsi9p1im1gpnhvapjdtx94z46qye'
 };
 
 const options = {
   method: 'POST',
-  uri: 'https://oihwice.wice-net.de/plugin/wp_wice_client_api_backend/json',
+  uri: 'http://oihwice2.wice-net.de/plugin/wp_wice_client_api_backend/json',
   headers: {
-    'X-API-KEY': undefined //'fsuogsi9p1im1gpnhvapjdtx94z46qye'
+    'X-API-KEY': undefined // 'fsuogsi9p1im1gpnhvapjdtx94z46qye'
   }
 };
 
 const organizations = [{
-    body: {
-      name: 'Company Ltd.',
-      email: 'info@company.com'
-    }
-  },
-  {
-    body: {
-      name: 'Test GmbH',
-      email: 'info@testgmbh.com'
-    }
-  },
-  {
-    body: {
-      name: 'Travel Mates',
-      email: 'info@travelmates.com'
-    }
+  body: {
+    name: 'Company Ltd.',
+    email: 'info@company.com'
   }
+},
+{
+  body: {
+    name: 'Test GmbH',
+    email: 'info@testgmbh.com'
+  }
+},
+{
+  body: {
+    name: 'Travel Mates',
+    email: 'info@travelmates.com'
+  }
+}
 ];
 
 const persons = [{
-    body: {
-      name: 'Brown',
-      firstname: 'Adam'
-    }
-  },
-  {
-    body: {
-      name: 'Doe',
-      firstname: 'John'
-    }
-  },
-  {
-    body: {
-      name: 'Kolarovv',
-      firstname: 'Sebastian',
-      email: 'kolarov@mail.com'
-    }
+  body: {
+    name: 'Brown',
+    firstname: 'Adam'
   }
+},
+{
+  body: {
+    name: 'Doe',
+    firstname: 'John'
+  }
+},
+{
+  body: {
+    name: 'Kolarovv',
+    firstname: 'Sebastian',
+    email: 'kolarov@mail.com'
+  }
+}
 ];
 
 const articles = [{
-    body: {
-      description: 'Arduino Nano'
-    }
-  },
-  {
-    body: {
-      description: 'Raspberry Pi'
-    }
+  body: {
+    description: 'Arduino Nano'
   }
+},
+{
+  body: {
+    description: 'Raspberry Pi'
+  }
+}
 ];
 
 module.exports = {
@@ -72,7 +72,7 @@ module.exports = {
   persons,
   organizations,
   articles
-}
+};
 module.exports = {
   options,
   configOptions,

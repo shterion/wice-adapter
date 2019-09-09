@@ -1,14 +1,12 @@
-const { expect } = require('chai');
-const seed =  require('./seed/seed');
-const { createSession } = require('./../lib/utils/wice');
-const { organizations, persons, articles, configOptions, options } = require('./seed/seed');
-const { checkForExistingPerson, createOrUpdatePerson} = require('./../lib/actions/upsertPerson');
-const { checkForExistingOrganization, createOrUpdateOrganization } = require('./../lib/actions/upsertOrganization');
-const { checkForExistingArticle, createOrUpdateArticle } = require('./../lib/actions/upsertArticle');
-
+const {expect} = require('chai');
+const seed = require('./seed/seed');
+const {createSession} = require('./../lib/utils/wice');
+const {organizations, persons, articles, configOptions, options} = require('./seed/seed');
+const {checkForExistingPerson, createOrUpdatePerson} = require('./../lib/actions/upsertPerson');
+const {checkForExistingOrganization, createOrUpdateOrganization} = require('./../lib/actions/upsertOrganization');
+const {checkForExistingArticle, createOrUpdateArticle} = require('./../lib/actions/upsertArticle');
 
 describe('Test actions', () => {
-
   it('should create or update a person', async () => {
     const cookie = await createSession(configOptions);
     const person = seed.persons[2];
@@ -30,7 +28,7 @@ describe('Test actions', () => {
     expect(newOrganization).to.have.property('rowid');
   });
 
-  it.only('should create or update an article', async () => {
+  it('should create or update an article', async () => {
     const cookie = await createSession(configOptions);
     const article = seed.articles[0];
     const existningArticleRowid = await checkForExistingArticle(article, cookie, options);
