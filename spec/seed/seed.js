@@ -48,9 +48,15 @@ const persons = [{
 },
 {
   body: {
-    name: 'Kolarovv',
-    firstname: 'Sebastian',
-    email: 'kolarov@mail.com',
+    meta: {
+      uid: '123asd',
+    },
+    data: {
+      oihUidEncrypted: '',
+      name: 'Kolarovv',
+      firstname: 'Sebastian',
+      email: 'kolarov@mail.com',
+    },
   },
 },
 ];
