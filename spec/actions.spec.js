@@ -1,10 +1,12 @@
-const {expect} = require('chai');
+const { expect } = require('chai');
 const seed = require('./seed/seed');
-const {createSession} = require('./../lib/utils/wice');
-const {organizations, persons, articles, configOptions, options} = require('./seed/seed');
-const {checkForExistingPerson, createOrUpdatePerson} = require('./../lib/actions/upsertPerson');
-const {checkForExistingOrganization, createOrUpdateOrganization} = require('./../lib/actions/upsertOrganization');
-const {checkForExistingArticle, createOrUpdateArticle} = require('./../lib/actions/upsertArticle');
+const { createSession } = require('./../lib/utils/wice');
+const {
+  organizations, persons, articles, configOptions, options,
+} = require('./seed/seed');
+const { checkForExistingPerson, createOrUpdatePerson } = require('./../lib/actions/upsertPerson');
+const { checkForExistingOrganization, createOrUpdateOrganization } = require('./../lib/actions/upsertOrganization');
+const { checkForExistingArticle, createOrUpdateArticle } = require('./../lib/actions/upsertArticle');
 
 describe('Test actions', () => {
   it('should create or update a person', async () => {
