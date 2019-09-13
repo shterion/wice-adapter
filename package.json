@@ -1,16 +1,19 @@
 {
-  "name": "wice-component",
-  "version": "0.5.0",
-  "description": "elastic.io Wice component",
+  "name": "@oih/wicecrm-adapter",
+  "version": "1.1.0",
+  "description": "OIH Adapter for Wice CRM",
   "homepage": "https://wice.de/",
-  "author": "Wice GmbH",
+  "author": {
+    "name": "Wice GmbH",
+    "url": "https://www.wice.de"
+  },
   "files": [
     "lib"
   ],
   "keywords": [
-    "wice",
-    "component",
-    "WiceCRM"
+    "wicecrm",
+    "adapter",
+    "oih"
   ],
   "scripts": {
     "start": "node ./node_modules/elasticio-sailor-nodejs/run.js",
@@ -40,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:openintegrationhub/Connectors.git"
+    "url": "git@github.com:openintegrationhub/wicecrm-adapter.git"
   },
   "license": "Apache 2.0"
 }
